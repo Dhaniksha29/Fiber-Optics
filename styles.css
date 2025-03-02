@@ -1,8 +1,7 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 200px auto;
-    padding: 200px auto;
+    margin: 80px;
+    padding: 80px auto;
     background-color: rgb(253, 253, 253); /* Black background */
     color: rgb(0, 0, 0); /* White text */
 }
