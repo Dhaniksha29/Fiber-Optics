@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber Optics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" async id="MathJax-script"
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <h1>Fiber Optics</h1>
+        <h2>Overview</h2>
+        <p>Fiber optics involves transmitting light through glass, plastic, or other transparent materials, working on
+            the principle of <b>Total Internal Reflection (TIR)</b>. Demonstrated by <b>John Tyndall in 1870</b>.</p>
+
+        <h2>Advantages Over Copper Wires</h2>
+        <ul>
+            <li>Smaller & Lighter</li>
+            <li>Higher Capacity</li>
+            <li>Better Communication (Enabled by laser invention in 1960)</li>
+        </ul>
+        <h2>Total Internal Reflection</h2>
+        <p>Total Internal Reflection occurs when a light ray traveling from a medium with a higher refractive index to a
+            medium with a lower refractive index hits the boundary at an angle greater than the critical angle. Instead
+            of refracting into the second medium, the light is completely reflected back into the first medium, allowing
+            optical fibers to guide light efficiently.</p>
+
+        <h2>Optical Fiber Components</h2>
+        <ul>
+            <li><b>Core:</b> Central region carrying signals.</li>
+            <li><b>Cladding:</b> Surrounds the core, keeping light waves inside via TIR.</li>
+            <li><b>Buffer:</b> Protects against damage and moisture.</li>
+            <li><b>Protective Sheet:</b> Holds multiple fibers in a cable.</li>
+        </ul>
+        <h2>Fabrication & Materials</h2>
+        <p>The glass used in optical fibers is made from silica (SiO₂). Its refractive index is approximately 1.458 at a
+            wavelength of 8500 Å. Various doping materials such as boron, germanium, and phosphorus are added to adjust
+            the refractive index.</p>
+        <p>If silica is doped with **Germania (GeO₂)** or **Phosphorus-Penta-Oxide (P₂O₅)**, the refractive index
+            increases, making these materials suitable for the core. Conversely, if silica is doped with **Boria
+            (B₂O₃)** or fluorine, the refractive index decreases, making them ideal for cladding.</p>
+
+        <h2>Acceptance Angle</h2>
+        <p><b>Definition:</b> The acceptance angle is the maximum angle at which light can enter an optical fiber and
+            still be guided through total internal reflection.</p>
+        <p><b>Derivation:</b></p>
+        <p>Let the refractive indices of the core, cladding, and surrounding medium be \( n_1 \), \( n_2 \), and \( n_0
+            \) (air) respectively, where \( n_1 > n_2 \).</p>
+        <p>Applying Snell's Law at the fiber's entrance:</p>
+        <p>\[ n_0 \sin \theta_i = n_1 \sin \theta_r \]</p>
+        <p>For total internal reflection at the core-cladding interface:</p>
+        <p>\[ \theta_c = \sin^{-1} \left( \frac{n_2}{n_1} \right) \]</p>
+        <p>Using trigonometric relations, the maximum acceptance angle \( \theta_{max} \) is:</p>
+        <p>\[ \theta_{max} = \sin^{-1} \left( \frac{n_1^2 - n_2^2}{n_0} \right)^{1/2} \]</p>
+        <p>The term \( \left( n_1^2 - n_2^2 \right)^{1/2} \) is known as the **Numerical Aperture (NA)**.</p>
+
+        <h2>Fractional Refractive Index Change</h2>
+        <p><b>Definition:</b> The fractional refractive index change (Δ) is the relative difference in refractive
+            indices between the core and cladding, given by:</p>
+        <p>\[ \Delta = \frac{n_1 - n_2}{n_1} \]</p>
+        <p>Since \( n_1 > n_2 \), Δ is always positive, ensuring total internal reflection.</p>
+
+        <h2>Numerical Aperture</h2>
+        <p><b>Definition:</b> The Numerical Aperture (NA) determines the light-gathering ability of an optical fiber and
+            is given by:</p>
+        <p>\[ NA = \sin \theta_{max} = \left( n_1^2 - n_2^2 \right)^{1/2} \]</p>
+        <p>For air (\( n_0 = 1 \)):</p>
+        <p>\[ NA = \left( n_1^2 - n_2^2 \right)^{1/2} \]</p>
+
+        <h1>Types of Optical Fibers</h1>
+
+        <div class="fiber-section">
+            <h2>Single-Mode Fiber</h2>
+            <p>Imagine a long, see-through pipe where light moves like a super-fast train. The inside part (core) has a
+                thicker light-traveling power than the outside (cladding). Because of this, light stays inside and moves
+                smoothly without bouncing much. This makes single-mode fiber great for long-distance, high-speed data
+                transfer!</p>
+        </div>
+
+        <div class="fiber-section">
+            <h2>Multi-Mode Fiber</h2>
+            <p>This fiber has a bigger core, like a wide tunnel, so light takes many different paths—some straight, some
+                zig-zagging. It’s called multi-mode because multiple light signals travel inside at the same time, like
+                cars on a highway. This makes it good for shorter distances but not for very long trips.</p>
+        </div>
+
+        <div class="fiber-section">
+            <h2>Graded-Index Fiber</h2>
+            <p>Unlike the other two, the inside (core) of this fiber smoothly changes from thick to thin. This makes
+                light bend gently instead of bouncing sharply, like a curvy racetrack. The longer light paths move
+                faster, reducing signal distortion, making it a great choice for clear signals over longer distances.
+            </p>
+        </div>
+
+        <h2>Key Optical Parameters</h2>
+        <ul>
+            <li><b>Total Internal Reflection:</b> Keeps light inside.</li>
+            <li><b>Acceptance Angle:</b> Maximum angle for light entry.</li>
+            <li><b>Numerical Aperture:</b> Light-gathering capacity.</li>
+        </ul>
+
+        <h2>Modes of Fiber: Normalized Frequency (V-Number)</h2>
+        <p>The V-number, also called Normalized Frequency, determines how many light paths (modes) can travel through
+            the fiber. It is given by the formula:</p>
+        <p style="text-align: center; font-weight: bold;">V = (2πa/λ) * sqrt(n₁² - n₂²)</p>
+        <p>Where:</p>
+        <ul>
+            <li><b>a</b> = core radius</li>
+            <li><b>λ</b> = wavelength of light</li>
+            <li><b>n₁</b> = refractive index of the core</li>
+            <li><b>n₂</b> = refractive index of the cladding</li>
+        </ul>
+        <p>If V < 2.405, the fiber is <b>single-mode</b>, meaning only one light path exists. If V > 2.405, multiple
+                light paths (modes) exist, making it a <b>multi-mode fiber</b>.</p>
+
+        <div>
+            <h2>Number of Modes in Multimode Fibers</h2>
+            <p>The number of modes in a multimode step-index fiber is:</p>
+            <p style="text-align: center; font-weight: bold;">N ≈ (V²/2)</p>
+            <p>For a multimode graded-index fiber, the number of modes is approximately:</p>
+            <p style="text-align: center; font-weight: bold;">N ≈ (V²/4)</p>
+            <p>Where M is the number of modes, and V is the normalized frequency.</p>
+        </div>
+
+        <div>
+            <h2>Cut-Off Wavelength</h2>
+            <p>The wavelength corresponding to the value of V = 2.405 is known as the <b>cut-off wavelength</b> of the
+                fiber. At this wavelength, the fiber transitions between single-mode and multi-mode operation.</p>
+        </div>
+
+        <h2>Attenuation</h2>
+        <p>Attenuation refers to the loss of signal strength as light travels through the fiber. It is measured in
+            decibels per kilometer (dB/km) and is given by:</p>
+        <p style="text-align: center; font-weight: bold;">α = (10/L) * log10(P_in / P_out)</p>
+        <p>Where:</p>
+        <ul>
+            <li><b>α</b> = attenuation coefficient (dB/km)</li>
+            <li><b>L</b> = fiber length (km)</li>
+            <li><b>P_in</b> = input optical power</li>
+            <li><b>P_out</b> = output optical power</li>
+        </ul>
+        </div>
+
+        <div>
+            <h2>Dispersion</h2>
+            <p>Dispersion is the spreading of light pulses over time as they travel through the fiber, causing signal
+                distortion. The total dispersion (D) is given by:</p>
+            <p style="text-align: center; font-weight: bold;">D = D_material + D_waveguide</p>
+            <p>Where:</p>
+            <ul>
+                <li><b>D_material</b> = Material dispersion due to wavelength-dependent refractive index.</li>
+                <li><b>D_waveguide</b> = Waveguide dispersion due to fiber structure.</li>
+            </ul>
+            
+            <h2>Fiber Optic Specifications</h2>
+            <ul>
+                <li><h3>Attenuation</h3>
+                    <p>Loss of signal, measured in dB</p></li>
+                <li><h3>Dispersion</h3>
+                    <p>Blurring of a signal, affects bandwidth </p></li>
+                <li><h3>Bandwidth                </h3>
+                    <p>The number of bits per second that can be sent through a data link</p></li>
+                <li><h3>Acceptance angle </h3>
+                    <p>Measures the largest angle of light that can be accepted into the core</p></li>
+            </ul>
+
+            <h2>Applications</h2>
+            <ul>
+                <li>Telecommunications</li>
+                <li>Medical Diagnosis (Fibroscopes)</li>
+                <li>Display Systems</li>
+                <li>High-Speed Internet</li>
+                <li>Military & Aerospace Communication</li>
+            </ul>
+
+            <h1>Questions Asked in Test</h1>
+            <hr>
+
+            <h1>Optical Fiber Communication</h1>
+
+            <div class="section">
+                <h2>Advantages of Optical Fibers in Communication Systems</h2>
+                <ul>
+                    <li>High bandwidth capacity</li>
+                    <li>Low signal loss and attenuation</li>
+                    <li>Immunity to electromagnetic interference (EMI)</li>
+                    <li>Secure and lightweight transmission</li>
+                    <li>Long-distance data transfer with minimal degradation</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>What is an Optical Fiber?</h2>
+                <p>An optical fiber is a thin, flexible strand of glass or plastic that transmits light signals over
+                    long distances. It consists of three main parts:</p>
+                <ul>
+                    <li><strong>Core:</strong> The central part where light propagates.</li>
+                    <li><strong>Cladding:</strong> Surrounds the core and ensures total internal reflection.</li>
+                    <li><strong>Buffer Coating:</strong> Protective outer layer.</li>
+                </ul>
+                <img src="optical_fiber_structure.png" alt="Structure of Optical Fiber">
+            </div>
+
+            <div class="section">
+                <h2>Principle of Optical Fiber Transmission</h2>
+                <p>Optical fibers work on the principle of <strong>Total Internal Reflection (TIR)</strong>, where light
+                    signals bounce within the core, ensuring efficient transmission.</p>
+            </div>
+
+            <div class="section">
+                <h2>Numerical Aperture (NA) and its Significance</h2>
+                <p>The Numerical Aperture (NA) of an optical fiber is given by:</p>
+                <p><strong>NA = √(n₁² - n₂²)</strong></p>
+                <p>where n₁ and n₂ are the refractive indices of the core and cladding, respectively.</p>
+            </div>
+
+            <div class="section">
+                <h2>Types of Optical Fibers</h2>
+                <p>Optical fibers are classified as:</p>
+                <ul>
+                    <li><strong>Single-Mode Fiber:</strong> Allows a single light mode, used for long-distance
+                        communication.</li>
+                    <li><strong>Multi-Mode Step Index Fiber:</strong> Multiple modes travel through the fiber, causing
+                        dispersion.</li>
+                    <li><strong>Multi-Mode Graded Index Fiber:</strong> Reduces modal dispersion by varying the
+                        refractive index.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Attenuation in Optical Fiber</h2>
+                <p>Attenuation refers to the loss of signal strength as it propagates through the fiber. It is given by:
+                </p>
+                <p><strong>α = (10/L) log (P_in / P_out)</strong></p>
+                <p>where P_in and P_out are input and output power levels, and L is the fiber length.</p>
+            </div>
+
+            <div class="section">
+                <h2>Optical Fiber Communication System</h2>
+                <p>Optical fiber communication consists of:</p>
+                <ol>
+                    <li><strong>Transmitter:</strong> Converts electrical signals into optical signals.</li>
+                    <li><strong>Optical Fiber Channel:</strong> Transmits light signals over long distances.</li>
+                    <li><strong>Receiver:</strong> Converts optical signals back into electrical form.</li>
+                    <li><strong>Regenerator:</strong> Amplifies degraded signals.</li>
+                </ol>
+            </div>
+    </main>
+</body>
+
+</html>
