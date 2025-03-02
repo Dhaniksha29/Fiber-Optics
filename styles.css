@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(253, 253, 253); /* Black background */
+    color: rgb(0, 0, 0); /* White text */
+}
+
+/* Header Styling */
+h1 {
+    color: rgb(41, 99, 41); /* Green for main heading */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section Headings */
+h2 {
+    color: rgb(17, 25, 75); /* Blue for section headings */
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Highlighting Important Text */
+strong {
+    color: rgb(150, 33, 33); /* Red for emphasis */
+}
+
+/* Main Content */
+main {
+    max-width: 200 auto; /* Set a maximum width */
+    margin: 0 auto ; /* Center the main content */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Image Styling */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid green; /* Green border around images */
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 15px;
+    background: rgb(14, 14, 79); /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: rgb(153, 34, 34); /* Red on hover */
+}
+
+/* Footer */
+footer {
+    background: black; /* Black footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Links */
+a {
+    color: blue; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: red; /* Red on hover */
+}
+
+/* Section Styling */
+.section {
+    background: rgba(255, 255, 255, 0.05); /* Slightly transparent white for sections */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
